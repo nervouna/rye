@@ -10,7 +10,7 @@ use crate::sources::PythonVersion;
 use crate::sync::create_virtualenv;
 use crate::utils::{get_venv_python_bin, CommandOutput};
 
-const PIP_TOOLS_VERSION: &str = "pip-tools==6.13.0";
+const PIP_TOOLS_VERSION: &str = "pip-tools==7.0.0";
 
 fn get_pip_tools_bin(py_ver: &PythonVersion, output: CommandOutput) -> Result<PathBuf, Error> {
     let self_venv = ensure_self_venv(output)?;
